@@ -29,7 +29,7 @@ Build for arm32v7 architecture
 ```sh
 docker build -t elswork/tensorflow:latest \
  --build-arg WHL_URL=http://ci.tensorflow.org/view/Nightly/job/nightly-pi/lastSuccessfulBuild/artifact/output-artifacts/ \
- --build-arg WHL_FILE=tensorflow-1.9.0rc0-cp27-none-linux_armv7l.whl .
+ --build-arg WHL_FILE=tensorflow-1.9.0-cp27-none-linux_armv7l.whl .
 ```
 
 ## My Real Usage Example
@@ -65,6 +65,10 @@ tensorboard --logdir=path/to/log-directory --host=0.0.0.0
 And pointing your browser to `http://localhost:6006`
 
 ## Latest Changes
+
+### 1.9.0
+
+- Upgraded from Tensorflow 1.9.0rc0 to 1.9.0
 
 ### 1.9.0rc0
 

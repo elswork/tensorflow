@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 ARG WHL_URL=https://storage.googleapis.com/tensorflow/linux/cpu/
-ARG WHL_FILE=tensorflow-1.9.0rc0-cp27-none-linux_x86_64.whl
+ARG WHL_FILE=tensorflow-1.9.0-cp27-none-linux_x86_64.whl
 
 RUN python -m pip install --upgrade pip && \
   pip --no-cache-dir install \
